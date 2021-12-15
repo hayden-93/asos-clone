@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "author": "Hayden Buckley-Smith <hayden@abstack.co> (http://haydenbs.com/)",
-  "scripts": {},
+  "scripts": {
+    "clean": "rimraf ./public",
+    "build": "npm-run-all -s clean 11ty:build css:build",
+    "dev": "npm-run-all -p clean 11ty:dev css:dev",
+    "11ty:build": "npx @11ty/eleventy",
+    "11ty:dev": "npm run 11ty:build -- --serve",
+    "css:build": "npx tailwindcss -i ./src/styles/tailwind.css -o ./public/output.css",
+    "css:dev": "npm run css:build -- --watch"
+  },
   "engines": {
     "node": ">=16",
     "npm": ">=7"
@@ -16,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/hayden-93/asos-clone/issues"
   },
-  "homepage": "https://github.com/hayden-93/asos-clone#readme"
+  "homepage": "https://github.com/hayden-93/asos-clone#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.7.1",
+    "tailwindcss": "^3.0.5"
+  }
 }
