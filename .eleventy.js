@@ -7,7 +7,7 @@ module.exports = function (config) {
     dir: {
       input: "pages",
       output: "public",
-      includes: "includes",
+      includes: "fragments",
       layouts: "layouts",
       data: "data",
     },
