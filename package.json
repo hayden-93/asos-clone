@@ -10,8 +10,9 @@
     "dev": "npm-run-all -p clean 11ty:dev css:dev",
     "11ty:build": "npx @11ty/eleventy",
     "11ty:dev": "npm run 11ty:build -- --serve",
-    "css:build": "npx tailwindcss -i ./src/styles/tailwind.css -o ./public/output.css",
-    "css:dev": "npm run css:build -- --watch"
+    "css": "npx tailwindcss -i ./src/styles/tailwind.css -o ./public/output.css",
+    "css:build": "npm run css -- --minify",
+    "css:dev": "npm run css -- --watch"
   },
   "engines": {
     "node": ">=16",
