@@ -10,8 +10,9 @@
     "dev": "npm-run-all -p clean 11ty:dev css:dev",
     "11ty:build": "npx @11ty/eleventy",
     "11ty:dev": "npm run 11ty:build -- --serve",
-    "css:build": "npx tailwindcss -i ./src/styles/tailwind.css -o ./public/output.css",
-    "css:dev": "npm run css:build -- --watch"
+    "css": "npx tailwindcss -i ./src/styles/tailwind.css -o ./public/output.css",
+    "css:build": "npm run css -- --minify",
+    "css:dev": "npm run css -- --watch"
   },
   "engines": {
     "node": ">=16",
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/hayden-93/asos-clone#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^1.0.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^2.7.1",
     "tailwindcss": "^3.0.5"
