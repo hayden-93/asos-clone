@@ -1,0 +1,29 @@
+<div class="bg-neutral-600">
+  <div class="max-w-screen-xl mx-auto">
+    <ul class="flex">
+      {% for link in header.nav %}
+      <li>
+        <button
+          type="button"
+          class="
+            text-neutral-50 text-xs
+            font-medium
+            p-4
+            {%
+            if
+            link.primary
+            ==
+            true%}bg-red-600
+            nav-primary{%
+            endif
+            %}
+            hover:bg-neutral-50 hover:text-neutral-600
+          "
+        >
+          {{ link.label }}
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
