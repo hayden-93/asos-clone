@@ -39,8 +39,10 @@ async function imageShortcode(src, alt, className, sizes = "100vw") {
 module.exports = function (config) {
   config.setQuietMode(!isDev);
   config.addPassthroughCopy({ "src/img": "img" });
-  config.addLiquidShortcode("image", imageShortcode);
-  config.addJavaScriptFunction("image", imageShortcode);
+  config.addShortcode("image", imageShortcode);
+  config.addShortcode("currentYear", function () {
+    return new Date().getFullYear();
+  });
 
   return {
     dir: {
