@@ -1,0 +1,44 @@
+{
+  "social": [
+    { "href": "#", "src": "/img/facebook.svg", "alt": "Go to ASOS Facebook" },
+    { "href": "#", "src": "/img/instagram.svg", "alt": "Go to ASOS Instagram" },
+    { "href": "#", "src": "/img/snapchat.svg", "alt": "Go to ASOS Snapchat" }
+  ],
+  "navigation": [
+    {
+      "title": "Help & Information",
+      "links": [
+        { "href": "#", "label": "Help" },
+        { "href": "#", "label": "Track order" },
+        { "href": "#", "label": "Delivery & returns" },
+        { "href": "#", "label": "Premier Delivery" },
+        { "href": "#", "label": "10% Student Discount" }
+      ]
+    },
+    {
+      "title": "About ASOS",
+      "links": [
+        { "href": "#", "label": "About us" },
+        { "href": "#", "label": "Careers at ASOS" },
+        { "href": "#", "label": "Corporate responsibility" },
+        { "href": "#", "label": "Investors' site" },
+        { "href": "#", "label": "Cyber Securty" }
+      ]
+    },
+    {
+      "title": "More From ASOS",
+      "links": [
+        { "href": "#", "label": "Mobile & ASOS apps" },
+        { "href": "#", "label": "ASOS Marketplace" },
+        { "href": "#", "label": "Gift vouchers" },
+        { "href": "#", "label": "Black Friday" },
+        { "href": "#", "label": "Our responsible fashion journey" }
+      ]
+    }
+  ],
+  "banner": [
+    { "href": "#", "label": "Privacy & Cookies" },
+    { "href": "#", "label": "Ts&Cs" },
+    { "href": "#", "label": "Accessibilty" }
+  ]
+}

@@ -1,5 +1,5 @@
 <div class="bg-neutral-600">
-  <div class="max-w-screen-xl mx-auto">
+  <nav class="max-w-screen-xl mx-auto">
     <ul class="flex">
       {% for link in header.nav %}
       <li>
@@ -7,14 +7,20 @@
           type="button"
           class="
             text-neutral-50 text-xs
-            font-medium
-            p-4
+            px-3
+            py-4
             {%
             if
             link.primary
             ==
             true%}bg-red-600
-            nav-primary{%
+            font-bold
+            nav-primary
+            {%
+            else
+            %}
+            font-medium
+            {%
             endif
             %}
             hover:bg-neutral-50 hover:text-neutral-600
@@ -25,5 +31,5 @@
       </li>
       {% endfor %}
     </ul>
-  </div>
+  </nav>
 </div>

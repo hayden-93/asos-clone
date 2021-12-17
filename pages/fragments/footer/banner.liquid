@@ -1,0 +1,16 @@
+<div class="bg-neutral-300">
+  <div class="flex items-center justify-between max-w-screen-xl mx-auto py-4">
+    <span class="text-xs text-neutral-700">&copy; {% currentYear %} ASOS</span>
+    <ul class="flex items-center divide-x divide-neutral-500">
+      {% for link in footer.links.banner %}
+      <li>
+        <a
+          href="{{ link.href }}"
+          class="block text-xs text-neutral-700 px-2 hover:text-blue-500"
+          >{{ link.label }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

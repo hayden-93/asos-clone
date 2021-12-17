@@ -1,0 +1,11 @@
+[
+  { "src": "/img/visa.webp", "alt": "Pay with Visa" },
+  { "src": "/img/mastercard.webp", "alt": "Pay with Mastercard" },
+  { "src": "/img/paypal.webp", "alt": "Pay with Paypal" },
+  { "src": "/img/american-express.webp", "alt": "Pay with American Express" },
+  { "src": "/img/visa-electron.webp", "alt": "Pay with Visa Electron" },
+  { "src": "/img/maestro.webp", "alt": "Pay with Maestro" },
+  { "src": "/img/applepay.jpg", "alt": "Pay with Apple Pay" },
+  { "src": "/img/klarna.webp", "alt": "Pay with Klarna" },
+  { "src": "/img/clearpay.webp", "alt": "Pay with Clearpay" }
+]
