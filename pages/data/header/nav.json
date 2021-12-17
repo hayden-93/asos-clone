@@ -1,0 +1,14 @@
+[
+  { "primary": true, "label": "Sale" },
+  { "primary": false, "label": "New in" },
+  { "primary": false, "label": "Clothing" },
+  { "primary": false, "label": "Shoes" },
+  { "primary": false, "label": "Accessories" },
+  { "primary": false, "label": "Gifts" },
+  { "primary": false, "label": "Topshop" },
+  { "primary": false, "label": "Face + Body" },
+  { "primary": false, "label": "Sportswear" },
+  { "primary": false, "label": "Brands" },
+  { "primary": true, "label": "Outlet" },
+  { "primary": false, "label": "Marketplace" }
+]

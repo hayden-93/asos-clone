@@ -1,0 +1,48 @@
+<div class="bg-neutral-200">
+  <nav class="max-w-screen-xl mx-auto grid grid-cols-4 gap-x-4 py-8">
+    {% for column in footer.links.navigation %}
+    <div class="space-y-4">
+      <h4 class="uppercase text-neutral-600 font-bold text-sm">
+        {{ column.title }}
+      </h4>
+      <ul class="text-xs text-neutral-600 space-y-3">
+        {% for link in column.links %}
+        <li>
+          <a href="{{ link.href }}" class="hover:text-blue-500">{{
+            link.label
+          }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+    <div class="space-y-4">
+      <h4 class="uppercase text-neutral-600 font-bold text-sm">
+        Shopping From:
+      </h4>
+      <button
+        type="button"
+        class="
+          flex
+          items-center
+          text-xs text-neutral-600
+          divide-x divide-neutral-500
+          border-neutral-500
+          hover:border-blue-500 hover:text-blue-500 hover:divide-blue-500
+        "
+      >
+        <span class="inline-flex items-center leading-none border-inherit"
+          >You're in
+          <img
+            src="/img/gb.png"
+            alt="United Kingdom"
+            class="w-4 h-4 border border-inherit rounded-full mx-2"
+        /></span>
+        <span
+          class="block pl-2 uppercase font-bold leading-none hover:text-inherit"
+          >Change</span
+        >
+      </button>
+    </div>
+  </nav>
+</div>
