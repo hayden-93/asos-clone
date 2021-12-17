@@ -35,5 +35,10 @@
         { "href": "#", "label": "Our responsible fashion journey" }
       ]
     }
+  ],
+  "banner": [
+    { "href": "#", "label": "Privacy & Cookies" },
+    { "href": "#", "label": "Ts&Cs" },
+    { "href": "#", "label": "Accessibilty" }
   ]
 }
