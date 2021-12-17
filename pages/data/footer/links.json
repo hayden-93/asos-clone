@@ -1,0 +1,7 @@
+{
+  "social": [
+    { "href": "#", "src": "/img/facebook.svg", "alt": "Go to ASOS Facebook" },
+    { "href": "#", "src": "/img/instagram.svg", "alt": "Go to ASOS Instagram" },
+    { "href": "#", "src": "/img/snapchat.svg", "alt": "Go to ASOS Snapchat" }
+  ]
+}
