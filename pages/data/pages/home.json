@@ -78,5 +78,25 @@
         "alt": "Photo by Sobhan Joodi on Unsplash"
       }
     }
+  ],
+  "featureGrid": [
+    {
+      "href": "#",
+      "title": "Activewear",
+      "description": "Sports mode: on",
+      "image": {
+        "src": "max-titov-unsplash.jpg",
+        "alt": "Photo by Max Titov on Unsplash"
+      }
+    },
+    {
+      "href": "#",
+      "title": "Branded skiwear",
+      "description": "Cya on the slopes",
+      "image": {
+        "src": "autri-taheri-unsplash.jpg",
+        "alt": "Photo by Autri Taheri on Unsplash"
+      }
+    }
   ]
 }

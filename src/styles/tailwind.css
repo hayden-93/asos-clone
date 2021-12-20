@@ -15,3 +15,7 @@
 .max-w-40 {
   max-width: 160px;
 }
+
+.max-h-5\/6 {
+  max-height: 83.333333%;
+}
