@@ -98,5 +98,49 @@
         "alt": "Photo by Autri Taheri on Unsplash"
       }
     }
+  ],
+  "brands": [
+    {
+      "href": "#",
+      "image": {
+        "src": "tommy-hilfiger.png",
+        "alt": "Tommy Hilfiger Logo"
+      }
+    },
+    {
+      "href": "#",
+      "image": {
+        "src": "the-north-face.png",
+        "alt": "North Face Logo"
+      }
+    },
+    {
+      "href": "#",
+      "image": {
+        "src": "nike.png",
+        "alt": "Nike Logo"
+      }
+    },
+    {
+      "href": "#",
+      "image": {
+        "src": "carhartt.png",
+        "alt": "Carhartt Logo"
+      }
+    },
+    {
+      "href": "#",
+      "image": {
+        "src": "ellesse.png",
+        "alt": "Ellesse Logo"
+      }
+    },
+    {
+      "href": "#",
+      "image": {
+        "src": "dr-martens.png",
+        "alt": "Dr. Martens Logo"
+      }
+    }
   ]
 }
