@@ -23,13 +23,11 @@ async function imageShortcode(src, alt, className, sizes = "100vw") {
     },
   });
 
-  const attributes = {
-    alt,
-    class: className,
-    sizes,
-    loading: "lazy",
-    decoding: "async",
-  };
+  const baseAttributes = { alt, sizes, loading: "lazy", decoding: "async" };
+
+  const attributes = className
+    ? { ...baseAttributes, class: className }
+    : baseAttributes;
 
   return Image.generateHTML(meta, attributes, {
     whitespaceMode: "inline",
