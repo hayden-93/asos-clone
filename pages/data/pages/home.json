@@ -1,4 +1,42 @@
 {
+  "heroGrid": [
+    {
+      "href": "#",
+      "title": "Winter Accessories",
+      "description": "Feel the heat",
+      "image": {
+        "src": "andres-hernandez-unsplash.jpg",
+        "alt": "Photo by Andres Hernandez on Unsplash"
+      }
+    },
+    {
+      "href": "#",
+      "title": "Logo Life",
+      "description": "Crooked Tongues & more",
+      "image": {
+        "src": "clarisse-meyer-unsplash.jpg",
+        "alt": "Photo by Clarisse Meyer on Unsplash"
+      }
+    },
+    {
+      "href": "#",
+      "title": "The gifting goods",
+      "description": "Present and correct",
+      "image": {
+        "src": "dani-navarro-unsplash.jpg",
+        "alt": "Photo by Dani Navarro on Unsplash"
+      }
+    },
+    {
+      "href": "#",
+      "title": "Adidas",
+      "description": "Stripe it lucky",
+      "image": {
+        "src": "ksenia-varapaeva-unsplash.jpg",
+        "alt": "Photo by Ksenia Varapaeva on Unsplash"
+      }
+    }
+  ],
   "carousel": [
     {
       "href": "#",
