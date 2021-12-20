@@ -63,7 +63,6 @@ title: Home | ASOS
     </div>
   </div>
 </section>
-
 <section class="flex flex-col bg-lime-400 py-8 px-4 space-y-8">
   <div class="text-center text-neutral-900">
     <a href="#" class="block">
@@ -88,11 +87,7 @@ title: Home | ASOS
         href="{{ item.href }}"
         class="flex flex-col bg-neutral-50 transition-transform duration-300 ease-in-out hover:scale-105"
       >
-        <div class="flex-1 max-h-72">
-          <!-- prettier-ignore -->
-          {% image item.image.src, item.image.alt, "h-full object-cover" %}
-          <!-- prettier-ignore end -->
-        </div>
+        <div class="flex-1 max-h-72">{% image item.image.src, item.image.alt, "h-full object-cover" %}</div>
         <div class="p-3">
           <h3 class="uppercase font-extrabold text-lg leading-6 text-neutral-900">
             {{ item.title }}
@@ -134,4 +129,34 @@ title: Home | ASOS
     "
     >View style and news</a
   >
+</section>
+<section class="bg-neutral-50 py-12 px-4">
+  <div class="max-w-screen-lg mx-auto flex space-x-12">
+    {% for item in pages.home.featureGrid %}
+    <a href="{{ item.href }}" class="flex flex-col h-full">
+      {% image item.image.src, item.image.alt, "max-h-5/6 object-cover" %}
+      <div class="bg-neutral-50 p-4 text-center space-y-4">
+        <h3 class="font-extrabold uppercase text-2xl text-neutral-900 leading-6">{{ item.title }}</h3>
+        <span class="block text-neutral-900">{{ item.description }}</span>
+        <span
+          class="
+            inline-block
+            self-center
+            uppercase
+            font-bold
+            text-neutral-900
+            border-2 border-neutral-900
+            py-4
+            px-10
+            transition
+            ease-in
+            duration-300
+            hover:bg-neutral-900 hover:text-neutral-50
+          "
+          >Shop Now</span
+        >
+      </div>
+    </a>
+    {% endfor %}
+  </div>
 </section>
