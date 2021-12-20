@@ -1,0 +1,82 @@
+{
+  "heroGrid": [
+    {
+      "href": "#",
+      "title": "Winter Accessories",
+      "description": "Feel the heat",
+      "image": {
+        "src": "andres-hernandez-unsplash.jpg",
+        "alt": "Photo by Andres Hernandez on Unsplash"
+      }
+    },
+    {
+      "href": "#",
+      "title": "Logo Life",
+      "description": "Crooked Tongues & more",
+      "image": {
+        "src": "clarisse-meyer-unsplash.jpg",
+        "alt": "Photo by Clarisse Meyer on Unsplash"
+      }
+    },
+    {
+      "href": "#",
+      "title": "The gifting goods",
+      "description": "Present and correct",
+      "image": {
+        "src": "dani-navarro-unsplash.jpg",
+        "alt": "Photo by Dani Navarro on Unsplash"
+      }
+    },
+    {
+      "href": "#",
+      "title": "Adidas",
+      "description": "Stripe it lucky",
+      "image": {
+        "src": "ksenia-varapaeva-unsplash.jpg",
+        "alt": "Photo by Ksenia Varapaeva on Unsplash"
+      }
+    }
+  ],
+  "carousel": [
+    {
+      "href": "#",
+      "title": "Level up your loungewear",
+      "description": "Join the cosy club",
+      "datePublished": "2021-12-20T23:00:00.000Z",
+      "image": {
+        "src": "shinfe-studio-unsplash.jpg",
+        "alt": "Photo by Shinfe Studio on Unsplash"
+      }
+    },
+    {
+      "href": "#",
+      "title": "Last-minute gifts under £20",
+      "description": "Failsafe prezzies this way",
+      "datePublished": "2021-12-18T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "href": "#",
+      "title": "5 key pieces for the holiday szn",
+      "description": "Head-to-toe styling. ASOS approved",
+      "datePublished": "2021-12-17T23:00:00.000Z",
+      "image": {
+        "src": "valerie-elash-unsplash.jpg",
+        "alt": "Photo by Valerie Elash on Unsplash"
+      }
+    },
+    {
+      "href": "#",
+      "title": "Best new sneaks: December",
+      "description": "Festive boxfresh finds",
+      "datePublished": "2021-12-13T23:00:00.000Z",
+      "image": {
+        "src": "sobhan-joodi-unsplash.jpg",
+        "alt": "Photo by Sobhan Joodi on Unsplash"
+      }
+    }
+  ]
+}

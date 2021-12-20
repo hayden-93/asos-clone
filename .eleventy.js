@@ -1,5 +1,7 @@
 const path = require("path");
+const format = require("date-fns/format");
 const Image = require("@11ty/eleventy-img");
+const parseISO = require("date-fns/parseISO");
 
 const isDev = process.env.NODE_ENV === "development";
 
@@ -25,9 +27,7 @@ async function imageShortcode(src, alt, className, sizes = "100vw") {
 
   const baseAttributes = { alt, sizes, loading: "lazy", decoding: "async" };
 
-  const attributes = className
-    ? { ...baseAttributes, class: className }
-    : baseAttributes;
+  const attributes = className ? { ...baseAttributes, class: className } : baseAttributes;
 
   return Image.generateHTML(meta, attributes, {
     whitespaceMode: "inline",
@@ -41,6 +41,7 @@ module.exports = function (config) {
   config.addShortcode("currentYear", function () {
     return new Date().getFullYear();
   });
+  config.addShortcode("dateFormat", (date, dateFormat) => format(parseISO(date), dateFormat));
 
   return {
     dir: {
