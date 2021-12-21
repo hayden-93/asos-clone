@@ -1,0 +1,67 @@
+{
+  "title": "Men's style feed",
+  "subtitle": "Style. Grooming. Inspiration. Advice.",
+  "loadMore": "Load more articles",
+  "posts": [
+    {
+      "category": "Styling",
+      "title": "Level up your loungewear",
+      "description": "Join the cosy club",
+      "datePublished": "2021-12-20T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "category": "Best of ASOS",
+      "title": "Last-minute gifts under £20",
+      "description": "Failsafe prezzies this way",
+      "datePublished": "2021-12-18T23:00:00.000Z",
+      "image": {
+        "src": "autri-taheri-unsplash.jpg",
+        "alt": "Photo by Autri Taheri on Unsplash"
+      }
+    },
+    {
+      "category": "Styling",
+      "title": "5 key pieces for the holiday szn",
+      "description": "Head-to-toe styling, ASOS approved",
+      "datePublished": "2021-12-17T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "category": "Best of ASOS",
+      "title": "Best new sneaks: December",
+      "description": "Festive boxfresh finds",
+      "datePublished": "2021-12-13T23:00:00.000Z",
+      "image": {
+        "src": "clarisse-meyer-unsplash.jpg",
+        "alt": "Photo by Clarisse Meyer on Unsplash"
+      }
+    },
+    {
+      "category": "Staff style",
+      "title": "ASOSERS share their party looks",
+      "description": "Join the cosy club",
+      "datePublished": "2021-12-12T23:00:00.000Z",
+      "image": {
+        "src": "dani-navarro-unsplash.jpg",
+        "alt": "Photo by Dani Navarro on Unsplash"
+      }
+    },
+    {
+      "category": "Best of ASOS",
+      "title": "Fragances: The hot list",
+      "description": "Spray to slay",
+      "datePublished": "2021-12-08T23:00:00.000Z",
+      "image": {
+        "src": "ksenia-varapaeva-unsplash.jpg",
+        "alt": "Photo by Kesenia Varapaeva on Unsplash"
+      }
+    }
+  ]
+}
