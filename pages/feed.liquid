@@ -6,12 +6,29 @@ title: Feed | ASOS
 <section class="flex flex-col items-center bg-neutral-50 py-8 px-4">
   <h1 class="text-center uppercase font-extrabold text-2xl tracking-widest text-neutral-900">{{ pages.feed.title }}</h1>
   <p class="text-center text-neutral-900">{{ pages.feed.subtitle }}</p>
+  <div class="max-w-screen-lg grid grid-cols-3 gap-4 gap-y-10 mt-8 text-neutral-900 leading-normal">
+    {% for item in pages.feed.posts %}
+    <article class="flex flex-col transition-transform duration-500 ease-in-out hover:scale-105">
+      <a href="#" class="grow flex flex-col"
+        >{% image item.image.src, item.image.alt, "aspect-square object-cover" %}
+        <div class="grow flex flex-col py-4 px-3">
+          <span class="block uppercase text-xs leading-none font-bold text-neutral-500">{{ item.category }}</span>
+          <h3 class="mt-1.5 font-bold uppercase text-xl">{{ item.title }}</h3>
+          <span class="mt-1.5 block text-neutral-500">{{ item.description }}</span>
+          <span class="flex-1 flex items-end justify-end pt-8 text-right text-xs font-bold text-neutral-600">
+            {% dateFormat item.datePublished, "dd MMMM yyyy" %}
+          </span>
+        </div>
+      </a>
+    </article>
+    {% endfor %}
+  </div>
   <button
     type="button"
     class="
       inline-block
-      mt-4
-      py-2
+      mt-6
+      py-3
       px-4
       uppercase
       text-sm
@@ -22,7 +39,7 @@ title: Feed | ASOS
       transition-colors
       ease-in
       duration-300
-      hover:border-neutral-50 hover:bg-neutral-900 hover:text-neutral-50
+      hover:bg-neutral-900 hover:text-neutral-50
     "
   >
     {{ pages.feed.loadMore }}
