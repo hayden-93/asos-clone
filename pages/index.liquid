@@ -204,13 +204,15 @@ title: Home | ASOS
     </div>
   </div>
 </section>
-<section class="bg-neutral-50">
-  <div class="p-8">
-    <h2 class="uppercase text-center font-extrabold text-2xl">Trending Brands</h2>
-  </div>
-  <div class="flex max-w-screen-xl mx-auto pb-8">
+<section class="bg-neutral-50 py-12 px-4 space-y-8">
+  <h2 class="uppercase text-center font-extrabold text-2xl">Trending Brands</h2>
+  <ul class="trends-list max-w-screen-xl mx-auto flex space-x-4">
     {% for item in pages.home.brands %}
-    <a href="{{ item.href }}" class="hover:opacity-50"> {% image item.image.src, item.image.alt %} </a>
+    <li class="trends-list-item">
+      <a href="{{ item.href }}" class="block transition-opacity ease-in duration-300">
+        {% image item.image.src, item.image.alt %}
+      </a>
+    </li>
     {% endfor %}
-  </div>
+  </ul>
 </section>

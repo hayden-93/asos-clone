@@ -19,3 +19,7 @@
 .max-h-5\/6 {
   max-height: 83.333333%;
 }
+
+.trends-list:hover :not(.trends-list-item:hover) a {
+  opacity: 0.4;
+}
