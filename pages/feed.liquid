@@ -1,0 +1,30 @@
+---
+layout: base
+title: Feed | ASOS
+---
+
+<section class="flex flex-col items-center bg-neutral-50 py-8 px-4">
+  <h1 class="text-center uppercase font-extrabold text-2xl tracking-widest text-neutral-900">{{ pages.feed.title }}</h1>
+  <p class="text-center text-neutral-900">{{ pages.feed.subtitle }}</p>
+  <button
+    type="button"
+    class="
+      inline-block
+      mt-4
+      py-2
+      px-4
+      uppercase
+      text-sm
+      font-bold
+      tracking-wide
+      leading-none
+      border-2 border-neutral-900
+      transition-colors
+      ease-in
+      duration-300
+      hover:border-neutral-50 hover:bg-neutral-900 hover:text-neutral-50
+    "
+  >
+    {{ pages.feed.loadMore }}
+  </button>
+</section>
