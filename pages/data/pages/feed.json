@@ -4,6 +4,7 @@
   "loadMore": "Load more articles",
   "posts": [
     {
+      "slug": "level-up-your-loungewear",
       "category": "Styling",
       "title": "Level up your loungewear",
       "description": "Join the cosy club",
@@ -14,6 +15,7 @@
       }
     },
     {
+      "slug": "gifts-under-20",
       "category": "Best of ASOS",
       "title": "Last-minute gifts under £20",
       "description": "Failsafe prezzies this way",
@@ -24,6 +26,7 @@
       }
     },
     {
+      "slug": "key-pieces-for-holiday",
       "category": "Styling",
       "title": "5 key pieces for the holiday szn",
       "description": "Head-to-toe styling, ASOS approved",
@@ -34,6 +37,7 @@
       }
     },
     {
+      "slug": "best-new-sneaks",
       "category": "Best of ASOS",
       "title": "Best new sneaks: December",
       "description": "Festive boxfresh finds",
@@ -44,6 +48,7 @@
       }
     },
     {
+      "slug": "asos-party-looks",
       "category": "Staff style",
       "title": "ASOSERS share their party looks",
       "description": "Join the cosy club",
@@ -54,10 +59,341 @@
       }
     },
     {
+      "slug": "fragrances-hot-list",
       "category": "Best of ASOS",
       "title": "Fragances: The hot list",
       "description": "Spray to slay",
       "datePublished": "2021-12-08T23:00:00.000Z",
+      "image": {
+        "src": "ksenia-varapaeva-unsplash.jpg",
+        "alt": "Photo by Kesenia Varapaeva on Unsplash"
+      }
+    },
+    {
+      "slug": "asos-mobos",
+      "category": "Style and Culture",
+      "title": "ASOS takes the MOBOS",
+      "description": "Ft. Pa Salieu, Russ Millions, Tion Wayne and Wes Nelson",
+      "datePublished": "2021-12-06T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "slug": "5-best-winter-coats-and-jackets",
+      "category": "Best of ASOS",
+      "title": "5 of the Best Winter Coats & Jackets",
+      "description": "Choose your p(layer)",
+      "datePublished": "2021-12-04T23:00:00.000Z",
+      "image": {
+        "src": "autri-taheri-unsplash.jpg",
+        "alt": "Photo by Autri Taheri on Unsplash"
+      }
+    },
+    {
+      "slug": "festive-fits",
+      "category": "Top 10",
+      "title": "Festive fits for you",
+      "description": "*Shakes sleigh bells*",
+      "datePublished": "2021-12-01T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "slug": "latest-from-north-face",
+      "category": "New Drop",
+      "title": "The latest from The North Face",
+      "description": "More than just a jacket",
+      "datePublished": "2021-11-23T23:00:00.000Z",
+      "image": {
+        "src": "clarisse-meyer-unsplash.jpg",
+        "alt": "Photo by Clarisse Meyer on Unsplash"
+      }
+    },
+    {
+      "slug": "secret-santa",
+      "category": "Top 10",
+      "title": "Gifts for secret santa",
+      "description": "No need for a gift receipt",
+      "datePublished": "2021-11-23T23:00:00.000Z",
+      "image": {
+        "src": "dani-navarro-unsplash.jpg",
+        "alt": "Photo by Dani Navarro on Unsplash"
+      }
+    },
+    {
+      "slug": "grooming-tips",
+      "category": "Grooming Tips",
+      "title": "Grooming Test Drive: Harry's",
+      "description": "Pending: new routine",
+      "datePublished": "2021-11-22T23:00:00.000Z",
+      "image": {
+        "src": "ksenia-varapaeva-unsplash.jpg",
+        "alt": "Photo by Kesenia Varapaeva on Unsplash"
+      }
+    },
+    {
+      "slug": "novembers-best-new-drops",
+      "category": "New Drop",
+      "title": "Novembers best new drop",
+      "description": "Collabs, Carhartt and more must-cops",
+      "datePublished": "2021-11-19T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "slug": "vip-judging-panel",
+      "category": "Editor Picks",
+      "title": "Join our VIP judging panel",
+      "description": "The ASOS beauty awards are back!",
+      "datePublished": "2021-11-17T23:00:00.000Z",
+      "image": {
+        "src": "autri-taheri-unsplash.jpg",
+        "alt": "Photo by Autri Taheri on Unsplash"
+      }
+    },
+    {
+      "slug": "topman-knit-edit",
+      "category": "Styling",
+      "title": "The Topman knit edit",
+      "description": "Bring the heat",
+      "datePublished": "2021-11-15T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "slug": "best-dressed-cfda-edition",
+      "category": "Style and Culture",
+      "title": "BEST DRSSED: CFDA EDITION",
+      "description": "Awards-ceremony clout",
+      "datePublished": "2021-11-11T23:00:00.000Z",
+      "image": {
+        "src": "clarisse-meyer-unsplash.jpg",
+        "alt": "Photo by Clarisse Meyer on Unsplash"
+      }
+    },
+    {
+      "slug": "festive-gifts-by-star-sign",
+      "category": "Best of ASOS",
+      "title": "The best festive gifts by star sign",
+      "description": "For the *insert star sign* in your life",
+      "datePublished": "2021-11-10T23:00:00.000Z",
+      "image": {
+        "src": "dani-navarro-unsplash.jpg",
+        "alt": "Photo by Dani Navarro on Unsplash"
+      }
+    },
+    {
+      "slug": "party-looks-insta-edition",
+      "category": "As seen on social",
+      "title": "Party looks: The Insta Edition",
+      "description": "Get the grid-worthy goods",
+      "datePublished": "2021-11-07T23:00:00.000Z",
+      "image": {
+        "src": "ksenia-varapaeva-unsplash.jpg",
+        "alt": "Photo by Kesenia Varapaeva on Unsplash"
+      }
+    },
+    {
+      "slug": "top-5-recycled-puffers",
+      "category": "Best of ASOS",
+      "title": "Top 5 recycled puffers",
+      "description": "We're turning waste into #fashun",
+      "datePublished": "2021-11-05T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "slug": "winter-boots",
+      "category": "Top 10",
+      "title": "Winter-ready boots",
+      "description": "Let the bootcamp begin",
+      "datePublished": "2021-11-04T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "slug": "5-best-topman-jackets",
+      "category": "Best of ASOS",
+      "title": "5 of the best topman jackets",
+      "description": "Wrapping up, Wrapped up",
+      "datePublished": "2021-11-01T23:00:00.000Z",
+      "image": {
+        "src": "clarisse-meyer-unsplash.jpg",
+        "alt": "Photo by Clarisse Meyer on Unsplash"
+      }
+    },
+    {
+      "slug": "asos-talk-style-&-black-pride",
+      "category": "Staff Style",
+      "title": "ASOSERS talk style & Black Pride",
+      "description": "Failsafe prezzies this way",
+      "datePublished": "2021-10-31T23:00:00.000Z",
+      "image": {
+        "src": "autri-taheri-unsplash.jpg",
+        "alt": "Photo by Autri Taheri on Unsplash"
+      }
+    },
+    {
+      "slug": "what-to-wear-winter-run",
+      "category": "Best of ASOS",
+      "title": "What to wear on your winter run",
+      "description": "Jog on",
+      "datePublished": "2021-10-29T23:00:00.000Z",
+      "image": {
+        "src": "dani-navarro-unsplash.jpg",
+        "alt": "Photo by Dani Navarro on Unsplash"
+      }
+    },
+    {
+      "slug": "fashion-team-october-picks",
+      "category": "Best of ASOS",
+      "title": "The fashion team's october picks",
+      "description": "And these peeps KNOW looks",
+      "datePublished": "2021-10-26T23:00:00.000Z",
+      "image": {
+        "src": "ksenia-varapaeva-unsplash.jpg",
+        "alt": "Photo by Kesenia Varapaeva on Unsplash"
+      }
+    },
+    {
+      "slug": "scorpio-season",
+      "category": "Style and Culture",
+      "title": "Scorpio Season: Celeb Style",
+      "description": "These looks are Way 2 Good",
+      "datePublished": "2021-10-22T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "slug": "new-balance-drop",
+      "category": "New Drop",
+      "title": "Sweet drops from New Balance",
+      "description": "'Good enough to eat' kinda vibes",
+      "datePublished": "2021-10-20T23:00:00.000Z",
+      "image": {
+        "src": "autri-taheri-unsplash.jpg",
+        "alt": "Photo by Autri Taheri on Unsplash"
+      }
+    },
+    {
+      "slug": "5-waterproof-jackets",
+      "category": "Best of ASOS",
+      "title": "5 Waterproof Jackets",
+      "description": "Keepin' dry and lookin' fly!",
+      "datePublished": "2021-10-16T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "slug": "top-10-fresh-knits",
+      "category": "Top 10",
+      "title": "Top 10: Fresh knits",
+      "description": "Hey, cosy-szn faves",
+      "datePublished": "2021-10-14T23:00:00.000Z",
+      "image": {
+        "src": "clarisse-meyer-unsplash.jpg",
+        "alt": "Photo by Clarisse Meyer on Unsplash"
+      }
+    },
+    {
+      "slug": "tiktok-mr-schnacks-fave-fits",
+      "category": "The Wishlist",
+      "title": "Tiktok's @MRSCHNACK's fave 'fits",
+      "description": "Looking like a schnack",
+      "datePublished": "2021-10-13T23:00:00.000Z",
+      "image": {
+        "src": "dani-navarro-unsplash.jpg",
+        "alt": "Photo by Dani Navarro on Unsplash"
+      }
+    },
+    {
+      "slug": "halloween-picks",
+      "category": "Editor Picks",
+      "title": "Top 10: Halloween picks",
+      "description": "Dressed to thrill",
+      "datePublished": "2021-10-09T23:00:00.000Z",
+      "image": {
+        "src": "ksenia-varapaeva-unsplash.jpg",
+        "alt": "Photo by Kesenia Varapaeva on Unsplash"
+      }
+    },
+    {
+      "slug": "grooming-advent-calendar",
+      "category": "Best of ASOS",
+      "title": "The grooming advent calendar is back!",
+      "description": "12 days of freshness",
+      "datePublished": "2021-10-07T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "slug": "best-sneaks-october-edition",
+      "category": "Best of ASOS",
+      "title": "Best new sneaks: October Edition",
+      "description": "Apologies to September's pay",
+      "datePublished": "2021-10-06T23:00:00.000Z",
+      "image": {
+        "src": "autri-taheri-unsplash.jpg",
+        "alt": "Photo by Autri Taheri on Unsplash"
+      }
+    },
+    {
+      "slug": "team-tailoring-insta-edition",
+      "category": "As seen on social",
+      "title": "Team tailoring: Insta Edition",
+      "description": "Fix up, look sharp",
+      "datePublished": "2021-10-04T23:00:00.000Z",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "slug": "a-list-skincare-secret",
+      "category": "Best of ASOS",
+      "title": "An A-List skincare secret",
+      "description": "Spoiler alert: it's Mario Badescu",
+      "datePublished": "2021-10-03T23:00:00.000Z",
+      "image": {
+        "src": "clarisse-meyer-unsplash.jpg",
+        "alt": "Photo by Clarisse Meyer on Unsplash"
+      }
+    },
+    {
+      "slug": "new-columbia",
+      "category": "New Drop",
+      "title": "Get outta here with New Columbia",
+      "description": "New season layering: 101",
+      "datePublished": "2021-10-01T23:00:00.000Z",
+      "image": {
+        "src": "dani-navarro-unsplash.jpg",
+        "alt": "Photo by Dani Navarro on Unsplash"
+      }
+    },
+    {
+      "slug": "denim-fit-guide",
+      "category": "Best of ASOS",
+      "title": "Your denim-fit guide",
+      "description": "Find your new ASOS DESIGN fave",
+      "datePublished": "2021-09-29T23:00:00.000Z",
       "image": {
         "src": "ksenia-varapaeva-unsplash.jpg",
         "alt": "Photo by Kesenia Varapaeva on Unsplash"
