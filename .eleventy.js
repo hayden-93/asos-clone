@@ -41,14 +41,6 @@ module.exports = function (config) {
   config.addShortcode("currentYear", () => new Date().getFullYear());
   config.addShortcode("dateFormat", (date, dateFormat) => format(parseISO(date), dateFormat));
   config.addShortcode("logger", (...args) => console.log(args));
-  config.addFilter("similarPosts", (collection, page, currentArticle) => {
-    const currentCategory = currentArticle.category;
-    const posts = collection.filter((post) => {
-      console.log(post.data.collections.feed);
-      return null;
-    });
-    // console.log({ page, currentArticle });
-  });
 
   return {
     dir: {
