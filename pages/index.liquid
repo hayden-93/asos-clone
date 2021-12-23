@@ -82,7 +82,7 @@ title: Home | ASOS
     <div class="flex-1 grid grid-cols-4 gap-4">
       {% for item in pages.home.carousel %}
       <a
-        href="{{ item.href }}"
+        href="/feed/{{ item.slug }}"
         class="flex flex-col bg-neutral-50 transition-transform duration-300 ease-in-out hover:scale-105"
       >
         <div class="flex-1 max-h-72">{% image item.image.src, item.image.alt, "h-full object-cover" %}</div>
