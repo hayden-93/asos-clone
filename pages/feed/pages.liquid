@@ -1,0 +1,223 @@
+---js
+{
+    layout: "base",
+    pagination: {
+        data: "pages.feed.posts",
+        size: 1,
+        before: function(data) {
+            return data.slice(0, 3)
+                .map((value) => ({ value, sort: Math.random() }))
+                .sort((a, b) => a.sort - b.sort)
+                .map(({ value }) => value)
+        },
+        alias: "article"
+    },
+    permalink: "feed/{{ article.slug | slug }}/"
+}
+---
+
+<section class="bg-neutral-50 py-16">
+  <div class="max-w-screen-lg mx-auto px-4 grid grid-cols-12 grid-rows-2 gap-8">
+    <article class="col-span-8 row-span-2 space-y-6">
+      <div class="space-y-2">
+        <span class="block font-bold tracking-widest text-neutral-900 uppercase">{{ article.category }}</span>
+        <h1 class="text-4xl font-bold tracking-wider text-neutral-900 uppercase">{{ article.title }}</h1>
+        <span class="block text-sm text-neutral-600"
+          >By {{ article.author }}, {% dateFormat article.datePublished, "dd MMMM yyyy" %}</span
+        >
+      </div>
+      <section class="text-neutral-900">
+        <p class="mt-4">
+          Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to
+          corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow
+          the holistic world view of disruptive innovation via workplace diversity and empowerment.
+        </p>
+        <div class="mt-4 py-2">{% image "brooke-cagle-unsplash.jpg", "Photo by Brooke Cagle on Unsplash" %}</div>
+        <p class="mt-4">
+          Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going
+          forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud
+          solution. User generated content in real-time will have multiple touchpoints for offshoring.
+        </p>
+        <h2 class="mt-6 font-bold text-lg tracking-wider uppercase">Identifying ballpark values</h2>
+        <p class="mt-1">
+          Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital
+          divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will
+          close the loop on focusing solely on the bottom line.
+        </p>
+        <p class="mt-4">
+          Podcasting operational change management inside of workflows to establish a framework. Taking seamless key
+          performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep
+          dive on the start-up mentality to derive convergence on cross-platform integration.
+        </p>
+        <h2 class="mt-6 font-bold text-lg tracking-wider uppercase">Empowered markets</h2>
+        <p class="mt-1">
+          Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users
+          after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+        </p>
+        <div class="grid grid-cols-2 gap-4 mt-4 py-2">
+          {% image "clarisse-meyer-unsplash.jpg", "Photo by Clarisse Meyer on Unsplash" %} {% image
+          "ksenia-varapaeva-unsplash.jpg", "Photo by Ksenia Varapaeva on Unsplash" %}
+        </div>
+        <h3 class="mt-6 font-bold tracking-wider uppercase">Timely deliverables</h3>
+        <p class="mt-1">
+          Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables
+          for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+        </p>
+        <p class="mt-4">
+          Completely synergize resource taxing relationships via
+          <a href="/feed/gifts-under-20" class="underline underline-offset-2 hover:underline-offset-4"
+            >premier niche markets.</a
+          >
+          Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling
+          customer service for state of the art customer service.
+        </p>
+        <p class="mt-4">
+          Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate
+          extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis
+          cutting-edge deliverables.
+        </p>
+        <p class="mt-4">
+          Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize
+          quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate
+          installed base portals after maintainable products.
+        </p>
+      </section>
+    </article>
+    <aside class="col-span-4 bg-neutral-50 space-y-4">
+      <div class="flex flex-col space-y-4">
+        <h3 class="text-center text-neutral-900 font-bold uppercase tracking-wider">Style Feed</h3>
+        <ul class="space-y-4">
+          {% for post in pagination.pages %}
+          <li class="text-left transition-transform duration-500 ease-in-out hover:scale-105">
+            <a href="/feed/{{ post.slug }}" class="inline-block p-2"
+              >{% image post.image.src, post.image.alt, "aspect-square object-cover" %}
+              <div class="pt-1 px-2 pb-3 space-y-1">
+                <h3 class="mt-1.5 font-bold leading-5 uppercase tracking-wide">{{ post.title }}</h3>
+                <span class="block text-xs text-neutral-600">{{ post.description }}</span>
+                <span class="block justify-end text-xs font-bold text-neutral-600">
+                  {% dateFormat post.datePublished, "dd MMMM yyyy" %}
+                </span>
+              </div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        <a
+          href="#"
+          class="
+            py-2
+            leading-none
+            tracking-wider
+            text-sm
+            uppercase
+            font-bold
+            bg-neutral-50
+            text-neutral-900 text-center
+            border-2 border-neutral-900
+            transition-colors
+            ease-in
+            duration-300
+            hover:bg-neutral-900 hover:text-neutral-50
+          "
+          >View More Styles & News</a
+        >
+      </div>
+    </aside>
+  </div>
+  <div class="relative">
+    {% if pagination.page.previous %}
+    <a
+      href="/feed/{{ pagination.page.previous.slug }}"
+      class="
+        bg-neutral-50
+        shadow-md
+        w-56
+        z-40
+        fixed
+        left-0
+        bottom-12
+        p-4
+        space-y-2
+        transition-transform
+        duration-700
+        ease-in-out
+        hover:scale-105
+      "
+    >
+      <span class="flex items-center space-x-2 text-xs text-neutral-900 font-bold tracking-wider leading-none">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+          <path
+            d="M8.84182 3.13514C9.04327 3.32401 9.05348 3.64042 8.86462 3.84188L5.43521 7.49991L8.86462 11.1579C9.05348 11.3594 9.04327 11.6758 8.84182 11.8647C8.64036 12.0535 8.32394 12.0433 8.13508 11.8419L4.38508 7.84188C4.20477 7.64955 4.20477 7.35027 4.38508 7.15794L8.13508 3.15794C8.32394 2.95648 8.64036 2.94628 8.84182 3.13514Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          ></path></svg
+        >Previous story</span
+      >
+      <div class="flex space-x-2">
+        <img
+          src="/img/{{ pagination.page.previous.image.src }}"
+          alt="{{ pagination.page.previous.image.alt }}"
+          class="w-16 object-cover"
+        />
+        <div class="space-y-2">
+          <h3 class="line-clamp-2 leading-4 text-sm font-bold uppercase tracking-wide text-neutral-900">
+            {{ pagination.page.previous.title }}
+          </h3>
+          <p class="line-clamp-2 leading-4 text-xs font-medium text-neutral-500">
+            {{ pagination.page.previous.description }}
+          </p>
+        </div>
+      </div>
+    </a>
+    {% endif %} {% if pagination.page.next %}
+    <a
+      href="/feed/{{ pagination.page.next.slug }}"
+      class="
+        bg-neutral-50
+        shadow-md
+        w-56
+        z-40
+        fixed
+        right-0
+        bottom-12
+        p-4
+        space-y-2
+        transition-transform
+        duration-700
+        ease-in-out
+        hover:scale-105
+      "
+    >
+      <span
+        class="flex items-center space-x-2 text-xs text-neutral-900 font-bold tracking-wider leading-none justify-end"
+      >
+        Next story
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+          <path
+            d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </span>
+      <div class="flex space-x-2">
+        <div class="space-y-2">
+          <h3 class="line-clamp-2 leading-4 text-sm font-bold uppercase tracking-wide text-neutral-900">
+            {{ pagination.page.next.title }}
+          </h3>
+          <p class="line-clamp-2 leading-4 text-xs font-medium text-neutral-500">
+            {{ pagination.page.next.description }}
+          </p>
+        </div>
+        <img
+          src="/img/{{ pagination.page.next.image.src }}"
+          alt="{{ pagination.page.next.image.alt }}"
+          class="w-16 object-cover"
+        />
+      </div>
+    </a>
+    {% endif %}
+  </div>
+</section>

@@ -38,10 +38,9 @@ module.exports = function (config) {
   config.setQuietMode(!isDev);
   config.addPassthroughCopy({ "src/img": "img" });
   config.addShortcode("image", imageShortcode);
-  config.addShortcode("currentYear", function () {
-    return new Date().getFullYear();
-  });
+  config.addShortcode("currentYear", () => new Date().getFullYear());
   config.addShortcode("dateFormat", (date, dateFormat) => format(parseISO(date), dateFormat));
+  config.addShortcode("logger", (...args) => console.log(args));
 
   return {
     dir: {
