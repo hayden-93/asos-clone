@@ -1,19 +1,10 @@
----js
-{
-    layout: "base",
-    pagination: {
-        data: "pages.feed.posts",
-        size: 1,
-        before: function(data) {
-            return data.slice(0, 3)
-                .map((value) => ({ value, sort: Math.random() }))
-                .sort((a, b) => a.sort - b.sort)
-                .map(({ value }) => value)
-        },
-        alias: "article"
-    },
-    permalink: "feed/{{ article.slug | slug }}/"
-}
+---
+layout: base
+pagination:
+  data: pages.feed.posts
+  size: 1
+  alias: article
+permalink: "feed/{{ article.slug | slug }}/"
 ---
 
 <section class="bg-neutral-50 py-16">
@@ -87,7 +78,7 @@
       <div class="flex flex-col space-y-4">
         <h3 class="text-center text-neutral-900 font-bold uppercase tracking-wider">Style Feed</h3>
         <ul class="space-y-4">
-          {% for post in pagination.pages %}
+          {% for post in pages.feed.relatedArticles %}
           <li class="text-left transition-transform duration-500 ease-in-out hover:scale-105">
             <a href="/feed/{{ post.slug }}" class="inline-block p-2"
               >{% image post.image.src, post.image.alt, "aspect-square object-cover" %}
