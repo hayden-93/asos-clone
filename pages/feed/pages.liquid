@@ -8,12 +8,44 @@ pagination:
 permalink: "feed/{{ article.slug | slug }}/"
 ---
 
-{% logger pagination.page.previous %}
-
+{% assign relatedArticles = collections.feed | similarPosts: page, article %}
 <section class="bg-neutral-50 py-16">
   <div class="max-w-screen-lg mx-auto px-4 grid grid-cols-12 grid-rows-2 gap-12">
     <article class="col-span-8 row-span-2 p-16 bg-neutral-400">Article</article>
-    <aside class="col-span-4 p-16 bg-neutral-400">Aside</aside>
+    <aside class="col-span-4 p-4 bg-neutral-50 space-y-4">
+      <div class="flex flex-col space-y-4">
+        <h2 class="text-center text-neutral-900 font-medium text-lg uppercase tracking-wider">Style Feed</h2>
+        <ul class="space-y-4">
+          {% for post in pagination.pages %}
+          <li class="text-left transition-transform duration-500 ease-in-out hover:scale-105">
+            <a href="/feed/{{ post.slug }}" class="inline-block p-2"
+              >{% image post.image.src, post.image.alt, "aspect-square object-cover" %}
+              <div class="pt-1 px-2 pb-3">
+                <h3 class="mt-1.5 font-bold leading-5 uppercase tracking-wide">{{ post.title }}</h3>
+                <span class="block text-xs text-neutral-500">{{ post.description }}</span>
+                <span class="block pt-2 justify-end text-xs font-bold text-neutral-600">
+                  {% dateFormat post.datePublished, "dd MMMM yyyy" %}
+                </span>
+              </div>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        <a
+          href="#"
+          class="
+            bg-neutral-50
+            text-neutral-900 text-center
+            border-2 border-neutral-900
+            transition-colors
+            ease-in
+            duration-300
+            hover:bg-neutral-900 hover:text-neutral-50
+          "
+          >View More Styles & News</a
+        >
+      </div>
+    </aside>
   </div>
   <div class="relative">
     {% if pagination.page.previous %}
