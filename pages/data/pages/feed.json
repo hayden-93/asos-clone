@@ -256,7 +256,7 @@
       }
     },
     {
-      "slug": "asos-talk-style-&-black-pride",
+      "slug": "asos-talk-style-and-black-pride",
       "category": "Staff Style",
       "title": "ASOSERS talk style & Black Pride",
       "description": "Failsafe prezzies this way",
@@ -433,6 +433,44 @@
       "image": {
         "src": "ksenia-varapaeva-unsplash.jpg",
         "alt": "Photo by Kesenia Varapaeva on Unsplash"
+      }
+    }
+  ],
+  "relatedArticles": [
+    {
+      "slug": "level-up-your-loungewear",
+      "category": "Styling",
+      "title": "Level up your loungewear",
+      "description": "Join the cosy club",
+      "datePublished": "2021-12-20T23:00:00.000Z",
+      "author": "Dora Bull",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
+      }
+    },
+    {
+      "slug": "gifts-under-20",
+      "category": "Best of ASOS",
+      "title": "Last-minute gifts under £20",
+      "description": "Failsafe prezzies this way",
+      "datePublished": "2021-12-18T23:00:00.000Z",
+      "author": "Mavis Faulkner",
+      "image": {
+        "src": "autri-taheri-unsplash.jpg",
+        "alt": "Photo by Autri Taheri on Unsplash"
+      }
+    },
+    {
+      "slug": "key-pieces-for-holiday",
+      "category": "Styling",
+      "title": "5 key pieces for the holiday szn",
+      "description": "Head-to-toe styling, ASOS approved",
+      "datePublished": "2021-12-17T23:00:00.000Z",
+      "author": "Keely Peel",
+      "image": {
+        "src": "alma-unsplash.jpg",
+        "alt": "Photo by Alma on Unsplash"
       }
     }
   ]
